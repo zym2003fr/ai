@@ -1,0 +1,34 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    background-color: azure;
+    font-family: "华文行楷" !important;
+}
+
+.box {
+    width: 9rem;
+    margin: 0 auto;
+    padding-top: 160px;
+}
+
+.login-box {
+    text-align: center;
+    padding: 0.4rem;
+}
+
+.login-box .hello{
+    color: skyblue;
+    font-size: 1.2rem;
+}
+
+.login-box .b{
+    font-size: 0.6rem;
+}
+
+.login-box .b a{
+    text-decoration: none;
+}

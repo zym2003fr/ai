@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background-color: rgb(202, 202, 202);
+    font-family: "华文行楷" !important;
+}
+
+.fl{
+    float: left;
+}
+
+.clearfixd:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.box{
+    background-color: rgb(202, 202, 202);
+    width: 10rem;
+    margin: 0 auto;
+    padding-top: 1rem;
+}
+
+.box .top{
+    height: 1rem;
+    width: 10rem;
+    position: fixed;
+    top: 0;
+    font-size: 0.72rem;
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+.box .top .title{
+    width: 7rem;
+    height: 0.6rem;
+    text-align: center;
+    display: inline-block;
+}
+
+.box .top .exit{
+    width: 2rem;
+    height: 0.8rem;
+    display: inline-block;
+}
+
+.box .top .exit a{
+    color: red;
+    font-size: 0.49rem;
+}
+
+.box .chat{
+    min-height: 8rem;
+    width: 9.5rem;
+    margin: 0 auto;
+    letter-spacing: 0.001rem;
+}
+
+.box .chat ul{
+    list-style: none;
+    width: 9.5rem;
+}
+
+.box .chat ul li{
+    padding-top: 0.2rem;
+    width: 9.5rem;
+}
+
+.box .chat .text1{
+    width: 8.3rem;
+    font: 0.49rem "华文行楷";
+    line-height: 0.6rem;
+    border-radius: 0.1rem;
+    padding: 0.2rem 0;
+    background: rgb(176, 228, 249);
+}
+
+.box .chat .imag1{
+    width: 1rem;
+    background-size: 0.56rem 0.56rem;
+    margin-top: 0.1rem;
+}
+
+.box .diolog{
+    position: fixed;
+    bottom: 0;
+    margin: 0.12rem auto;
+    height: 1rem;
+    width: 10rem;
+    background-color: white;
+}
+
+.box .diolog .control{
+    padding-left: 0.1rem;
+    width: 9.6rem;
+}
+
+.zhankong{
+    height: 0.1rem;
+    width: 10rem;
+}
+
+.box .diolog .control .left{
+    width: 0.8rem;
+    background-size: 0.66rem 0.66rem;
+}
+
+.box .diolog .control .txt{
+    padding-left: 0.1rem;
+    height: 0.8rem;
+    width: 7.1rem;
+    border-radius: 0.14rem;
+    font-size: 0.6rem;
+    background: rgb(223, 222, 222);
+    margin-left: 0.06rem;
+    border: none;
+}
+
+.box .diolog .control .send{
+    height: 0.8rem;
+    width: 1.5rem;
+    line-height: 0.66rem;
+    font-size: 0.56rem;
+    color: #fff;
+    border: 0.02rem solid #409eff;
+    border-radius: 0.1rem;
+    background-color: red;
+    cursor: pointer;
+    float: right;
+}
+
+.black_overlay{
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index:1001;
+    -moz-opacity: 0.8;
+    opacity:.80;
+    filter: alpha(opacity=88);
+}
+
+.white_content {
+    display: none;
+    position: absolute;
+    top: 3.5rem;
+    left: 2.5rem;
+    width: 5rem;
+    height: 2rem;
+    padding: 0.4rem;
+    border: 0.02rem solid white;
+    background-color: azure;
+    z-index:1002;
+    overflow: auto;
+}
+
+.mean{
+    height: 0.8rem;
+    font-size: 0.6rem;
+    text-align: center;
+}
+
+.zhankong1{
+    height: 0.1rem;
+    width: 2.4rem;
+}
+
+.bottom{
+    text-align: center;
+    height: 0.8rem;
+    width: 2.4rem;
+    background-color: skyblue;
+    display: inline-block;
+}
+
+.bottom a{
+    font-size: 0.56rem;
+}

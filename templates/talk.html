@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>对话界面</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/talk.css') }}">
+</head>
+<body>
+    <div class="box">
+        <div class="top">
+            <div class="zhankong"></div>
+            <div class="title">
+                校园小助手
+            </div>
+            <div class="exit fl">
+                <a href="#" onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">退出登录</a>
+            </div>
+        </div>
+        <div class="chat">
+            <ul id="list" >
+                <li class="clearfixd">
+                    <img class="imag1 fl" src="{{ url_for('static',filename='images/picture2.jpg') }}"></img>
+                    <div class="text1 fl">
+                        欢迎使用
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="diolog">
+            <div class="zhankong"></div>
+            <div class="control">
+                <img class="left fl" src="{{ url_for('static',filename='images/picture1.jpg') }}"></img>
+                <input class="txt fl"></input>
+                <button class="send fl">发送</button>
+            </div>
+        </div>
+        <div id="light" class="white_content"><br>
+            <div class="mean">
+                是否退出登录
+            </div>
+            <div class="bottom">
+                <div class="zhankong1"></div>
+                <a href="/login">是</a>
+            </div>
+            <div class="bottom">
+                <div class="zhankong1"></div>
+                <a href="#" onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">否</a>
+            </div>
+        </div>
+        <div id="fade" class="black_overlay"></div>
+    </div>
+</body>
+<script src="{{ url_for('static',filename='js/talk.js') }}"></script>
+<script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+</html>

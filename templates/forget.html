@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/forget.css') }}">
+</head>
+<body>
+    <div class="box">
+        <div class="login-box">
+            <h3 class="title">
+                请输入密保找回密码
+            </h3>
+            <form action="" method="post">
+                <div class="form-item">
+                    学号：<input type="text" placeholder="请输入学号..." name="username" required="required" pattern="\d{12}" title="输入正确的学号"><br />
+                </div>
+                <div class="num">
+                    <p>
+                        请选择要输入的密保：密保1&ensp;<input type="radio" name="a" value="密保1" checked>&ensp;
+                        密保2&ensp;<input type="radio" name="a" value="密保2">&ensp;
+                        密保3&ensp;<input type="radio" name="a" value="密保3">
+                    </p>
+                    <p>&emsp;</p>
+                </div>
+                <div class="form-item">
+                    密保：<input type="test" placeholder="请输入密保..." name="password" required="required" pattern="\w{0,9}" title="输入密保（1~10个字符）"><br />
+                </div>
+                <p class="tip">
+                    <a href="/login">记得密码，返回登陆？</a>
+                </p>
+                <button class="submit-btn">确认</button>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+</html>

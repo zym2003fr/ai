@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/register.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <h3 class="title">
+                账号注册
+            </h3>
+            <form action="" method="post">
+                <div class="form-item">
+                    学号：<input type="text" placeholder="请输入学号..." name="username" required="required" pattern="\d{12}" title="输入正确的学号"><br />
+                </div>
+                <div class="form-item">
+                    密码：<input type="text" placeholder="请输入密码..." name="password" required="required" pattern="\w{7,19}" title="输入合法密码（8~20个字符）"><br />
+                </div>
+                <div class="form-item">
+                    密保1：<input type="text" placeholder="请输入密保1..." name="密保1" required="required" pattern="\w{0,9}" title="输入密保（1~10个字符）"><br />
+                </div>
+                <div class="form-item">
+                    密保2：<input type="text" placeholder="请输入密保2..." name="密保2" required="required" pattern="\w{0,9}" title="输入密保（1~10个字符）"><br />
+                </div>
+                <div class="form-item">
+                    密保3：<input type="text" placeholder="请输入密保3..." name="密保3" required="required" pattern="\w{0,9}" title="输入密保（1~10个字符）"><br />
+                </div>
+                <p class="tip"><a href="/login">已有账号，去登录？</a></p>
+                <div class="agreement"><input type="checkbox" required="required">&ensp;我已阅读并同意
+                    <a href="#" onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">服务协议</a>
+                </div>
+                <button class="submit-btn">注册</button>
+            </form>
+        </div>
+    </div>
+    <div id="light" class="white_content"><br>
+        <div class="mean">
+            略
+        </div>
+        <div class="bottom">
+            <div class="zhankong"></div>
+            <div class="exit">
+                <div class="zhankong2"></div>
+                <a href="#" onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">关闭</a>
+            </div>
+        </div>
+    </div>
+    <div id="fade" class="black_overlay"></div>
+</body>
+<script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+</html>
